@@ -49,23 +49,34 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
+                className={`header-logo  flex w-full dark:flex-row-reverse items-center justify-center gap-2 ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo.png"
                   alt="logo"
-                  width={140}
+                  width={30}
                   height={30}
                   className="w-full dark:hidden"
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                  }}
                 />
+                <h2 className="text-2xl font-bold text-black dark:text-white">
+                  TekniQ
+                </h2>
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/logo.png"
                   alt="logo"
-                  width={140}
+                  width={30}
                   height={30}
                   className="hidden w-full dark:block"
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                  }}
                 />
               </Link>
             </div>

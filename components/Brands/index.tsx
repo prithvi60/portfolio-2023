@@ -4,34 +4,34 @@ import Image from "next/image";
 const brandsData: Brand[] = [
   {
     id: 1,
-    name: "UIdeck",
-    href: "https://uideck.com",
+    name: "The Internet generation",
+    href: "https://intermontlife.com/",
     image: "/images/brands/uideck.svg",
   },
   {
     id: 2,
-    name: "Tailgrids",
-    href: "https://tailgrids.com",
+    name: "Camikarra",
+    href: "https://intermontlife.com/",
     image: "/images/brands/tailgrids.svg",
   },
   {
     id: 3,
-    name: "Lineicons",
-    href: "https://lineicons.com",
+    name: "Intermont",
+    href: "https://intermontlife.com/",
     image: "/images/brands/lineicons.svg",
   },
-  {
-    id: 4,
-    name: "GrayGrids",
-    href: "https://graygrids.com",
-    image: "/images/brands/graygrids.svg",
-  },
-  {
-    id: 5,
-    name: "TailAdmin",
-    href: "https://tailadmin.com",
-    image: "/images/brands/tailadmin.svg",
-  },
+  // {
+  //   id: 4,
+  //   name: "GrayGrids",
+  //   href: "https://graygrids.com",
+  //   image: "/images/brands/graygrids.svg",
+  // },
+  // {
+  //   id: 5,
+  //   name: "TailAdmin",
+  //   href: "https://tailadmin.com",
+  //   image: "/images/brands/tailadmin.svg",
+  // },
 ];
 
 const Brands = () => {

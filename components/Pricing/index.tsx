@@ -11,13 +11,13 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Custom Quote Tailored to your needs"
+          paragraph=""
           center
           width="665px"
         />
 
-        <div className="w-full">
+        {/* <div className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
@@ -58,14 +58,14 @@ const Pricing = () => {
               Yearly
             </span>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="All  the essentials."
           >
             <OfferList text="All UI Components" status="active" />
             <OfferList text="Use with Unlimited Projects" status="active" />
@@ -78,7 +78,7 @@ const Pricing = () => {
             packageName="Basic"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="All  the essentials plus performance"
           >
             <OfferList text="All UI Components" status="active" />
             <OfferList text="Use with Unlimited Projects" status="active" />
@@ -91,7 +91,7 @@ const Pricing = () => {
             packageName="Plus"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Everything you ever need"
           >
             <OfferList text="All UI Components" status="active" />
             <OfferList text="Use with Unlimited Projects" status="active" />

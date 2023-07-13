@@ -5,28 +5,29 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Zack",
+    designation: "Client @Upwork",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "The job was done exactly as expected. Prithvi took enough time to understand my requirements and ask questions to clarify all details. After that he executed as discussed and delivered on time.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    name: "Apoorv",
+    designation: "Client @Upwork",
+    content: `We hired Prithvi to work on our project involving React JS and I must say we were extremely impressed with the work that was done.He did exactly what was required and went above and beyond for some features in the project. It took a bit longer than what was initially desired but the quality of work overshadows this small issue.
+      Communication with Prithvi was excellent throughout the project, and he was very responsive to any queries, concerns or bugs that we had. He demonstrated a great understanding of React in our project and was able to implement complex functionality.
+      Overall, I'm extremely satisfied with the work that was done and would highly recommend to anyone looking for skilled and a reliable React/Front End developer. Thank you for your work. Continue what you're doing, peace!`,
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Paul Mahoney",
+    designation: "Client @Upwork",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Very good experience working with Prithvi. Nice guy, a good listener and flexible. Even though I asked him to work on a platform (bubble.io) he was not familiar with, he was able to pick it up very quickly and with little fuss. Kept to deadline well. Happy to fix bugs and make sure everything was done right. Fluent English speaker and good at communicating and very easy to talk with. All round 5-star experience. Will be coming back to him for sure.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -38,7 +39,7 @@ const Testimonials = () => {
       <div className="container">
         <SectionTitle
           title="What Our Clients Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Our clients speak for us."
           center
         />
 
