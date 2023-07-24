@@ -10,13 +10,19 @@
   },
   "dependencies": {
     "@next/font": "13.1.6",
+    "@react-spring/three": "^9.7.3",
+    "@react-three/drei": "^9.79.3",
+    "@react-three/fiber": "^8.13.5",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "leva": "^0.9.35",
     "next": "13.1.6",
     "next-themes": "^0.2.1",
+    "r3f-perf": "^7.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-modal-video": "^2.0.0"
+    "react-modal-video": "^2.0.0",
+    "three": "^0.154.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",

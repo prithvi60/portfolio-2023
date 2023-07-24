@@ -31,3 +31,31 @@
     @apply opacity-100;
   }
 }
+.experience {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #402041;
+}
+
+canvas {
+  touch-action: none;
+}
+
+.htmlScreen iframe .videoplayer {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 20px;
+  background: #000000;
+  touch-action: none;
+}
+
+@media (max-width: 600px) {
+  .htmlScreen  .videoplayer {
+    width: 100vw;
+    height: 100%;
+  }
+}

@@ -49,7 +49,7 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo  flex w-full dark:flex-row-reverse items-center justify-center gap-2 ${
+                className={`header-logo  flex w-full items-center justify-center gap-2 dark:flex-row-reverse ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
@@ -65,7 +65,7 @@ const Header = () => {
                   }}
                 />
                 <h2 className="text-2xl font-bold text-black dark:text-white">
-                  TekniQ
+                  Webibi
                 </h2>
                 <Image
                   src="/images/logo/logo.png"
@@ -173,9 +173,9 @@ const Header = () => {
                 >
                   Sign Up
                 </Link> */}
-                <div>
+                {/* <div>
                   <ThemeToggler />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
