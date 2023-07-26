@@ -80,8 +80,11 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button type="submit" className="rounded-md bg-primary/[80%] py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp dark:bg-primary/40">
-                      Submit
+                    <button
+                      type="submit"
+                      className="rounded-md  bg-cta/40 py-4 px-9 text-base font-medium text-white transition duration-300  ease-in-out hover:bg-ctahover/80 "
+                    >
+                      <span className="drop-shadow-lg"> Submit</span>
                     </button>
                   </div>
                 </div>

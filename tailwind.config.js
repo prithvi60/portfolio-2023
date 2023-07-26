@@ -16,11 +16,16 @@ module.exports = {
       transparent: "transparent",
       white: "#FFFFFF",
       black: "#090E34",
-      bgdark: "#441C3E",
+      textblack:"#000000",
+      // site background color
+      bgdark: "#121738",
       bglight: "#FCF5EF",
       dark: "#1D2144",
-      primary: "#4A6CF7",
-      yellow: "#FBB040",
+      // btns
+      primary: "#718096",
+      cta:"#b19cd9",
+      ctahover:"#ffc107",
+      yellow: "#b19cd9",
       "body-color": "#959CB1",
     },
     screens: {

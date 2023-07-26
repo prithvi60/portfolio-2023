@@ -4,6 +4,7 @@ import { Html, useGLTF } from "@react-three/drei";
 import { animated, useSpring } from "@react-spring/three";
 import { useControls } from "leva";
 import VideoCard  from "../Common/VideoCard";
+import { motion } from "framer-motion-3d"
 const STEP_DURATION = 1000;
 const SCREEN_TILT = 3000;
 export function Laptop({ x, y, z, rotX, width }) {
@@ -111,7 +112,14 @@ export function Laptop({ x, y, z, rotX, width }) {
       // rotation-z={screenX}
       dispose={null}
     >
-      <group
+      <motion.group
+          initial={{ opacity: 0, z:100 }}
+          animate={{ opacity: 1, z:0 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01]
+          }}
         // position={[0, 0.519, 0]}
         // scale={0.103}
         scale={width > 600 ? 0.103 : 0.05}
@@ -328,7 +336,7 @@ export function Laptop({ x, y, z, rotX, width }) {
             scale={0.579}
           />
         </animated.group>
-      </group>
+      </motion.group>
     </animated.group>
   );
 }
