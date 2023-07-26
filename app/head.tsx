@@ -1,6 +1,5 @@
 import Script from "next/script";
 
-declare let gtag: Function;
 export default function Head() {
   return (
     <>
@@ -8,7 +7,7 @@ export default function Head() {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
-        content=" Web design for Brands 🌏 | Front-end development 💻| 🛠️- ReactJs , NextJs, CSS, ThreeJs"
+        content="Unleash your Visual Brilliance 🌏 with Webibee"
       />
       <link rel="icon" href="/favicon.ico" />
       <Script
