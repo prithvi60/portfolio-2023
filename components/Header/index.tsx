@@ -28,8 +28,10 @@ export const ProgressWheel = () => {
   );
 };
 const Header = () => {
-  const width = window.innerWidth;
-
+  const [width, setWidth] = useState(700);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, [setWidth]);
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -96,7 +98,7 @@ const Header = () => {
                   }}
                 />
                 <h2 className="text-2xl font-bold text-black dark:text-white">
-                  Webibi
+                  Webibee
                 </h2>
                 <Image
                   src="/images/logo/logo.png"

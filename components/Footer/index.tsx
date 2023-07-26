@@ -40,7 +40,7 @@ const Footer = () => {
                     }}
                   />
                   <h2 className="text-2xl font-bold text-black dark:text-white">
-                    Webibi
+                    Webibee
                   </h2>
                 </Link>
                 <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
