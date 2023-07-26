@@ -114,7 +114,7 @@ export function Laptop({ x, y, z, rotX, width }) {
     >
       <motion.group
           initial={{ opacity: 0, z:100 }}
-          animate={{ opacity: 1, z:0 }}
+          animate={{ opacity: 1, z:0 ,type:"spring"}}
           transition={{
             duration: 0.8,
             delay: 0.3,

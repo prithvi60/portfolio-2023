@@ -15,17 +15,17 @@ import { Flag } from "./Flag";
 import { useFrame, useLoader, useThree } from "@react-three/fiber";
 import { Perf } from "r3f-perf";
 import * as THREE from "three";
-const Background = () => {
-  const { gl } = useThree();
-  const texture = useLoader(THREE.TextureLoader, "/bg.jpg");
-  return <primitive attach="background" object={texture} />;
-};
+// const Background = () => {
+//   const { gl } = useThree();
+//   const texture = useLoader(THREE.TextureLoader, "/bg.jpg");
+//   return <primitive attach="background" object={texture} />;
+// };
 
 export default function Experience() {
   const width = window.innerWidth;
 
   const [on, setOn] = React.useState(false);
-  const [toggle, setToggle] = React.useState(false);
+  // const [toggle, setToggle] = React.useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {

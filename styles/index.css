@@ -86,3 +86,19 @@ canvas {
   stroke: var(--accent);
   stroke-dasharray: 0, 1;
 }
+.hero-title {
+  position: relative;
+  animation: move 5s ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
