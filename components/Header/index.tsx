@@ -1,11 +1,35 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+// Universal
+import { scroll } from "framer-motion/dom";
+export const ProgressWheel = () => {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    scroll((progress) => {
+      setProgress(progress);
+    });
+  }, []);
 
+  return (
+    <svg
+      width="50"
+      height="50"
+      viewBox="0 0 100 100"
+      className="progress-wheel"
+      style={{ strokeDasharray: `${progress}, 1` }}
+    >
+      <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+      <circle cx="50" cy="50" r="30" pathLength="1" className="progress" />
+    </svg>
+  );
+};
 const Header = () => {
+  const width = window.innerWidth;
+
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -34,7 +58,14 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
+  // useEffect(()=>{
+  //   const progressWheel = document.querySelector(".progress");
+  // console.log(progressWheel)
+  // scroll((progress) => {
+  //   progressWheel.attributes.strokeDasharray = `${progress}, 1`;
+  // });
 
+  // })
   return (
     <>
       <header
@@ -79,6 +110,12 @@ const Header = () => {
                   }}
                 />
               </Link>
+
+              {width < 600 ? null : (
+                <Suspense fallback={null}>
+                  <ProgressWheel />
+                </Suspense>
+              )}
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
@@ -159,23 +196,6 @@ const Header = () => {
                     ))}
                   </ul>
                 </nav>
-              </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
-                  href="/signin"
-                  className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link> */}
-                {/* <div>
-                  <ThemeToggler />
-                </div> */}
               </div>
             </div>
           </div>

@@ -3,7 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  --scroll: #718096;
 
+  --accent: var(--scroll);
+}
 @layer base {
   body {
     font-family: "Inter", sans-serif;
@@ -54,10 +58,31 @@ canvas {
 }
 
 @media (max-width: 600px) {
-  .htmlScreen  .videoplayer {
+  .htmlScreen .videoplayer {
     width: 100vw;
     height: 100%;
   }
 }
 
+.progress-wheel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transform: rotate(-90deg);
+}
 
+.progress-wheel circle {
+  stroke-dashoffset: 0;
+  stroke-width: 30%;
+  fill: none;
+}
+
+.progress-wheel .bg {
+  stroke: var(--accent);
+  opacity: 0.6;
+}
+
+.progress-wheel .progress {
+  stroke: var(--accent);
+  stroke-dasharray: 0, 1;
+}

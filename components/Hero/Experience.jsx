@@ -10,6 +10,8 @@ import { useSpring } from "@react-spring/three";
 import { useControls } from "leva";
 import React, { useState, useEffect } from "react";
 import { Laptop } from "./Laptop";
+import { Flag } from "./Flag";
+
 import { useFrame, useLoader, useThree } from "@react-three/fiber";
 import { Perf } from "r3f-perf";
 import * as THREE from "three";
@@ -311,6 +313,7 @@ export default function Experience() {
           <Laptop width={width} positiony={-2} rotationx={0.13} />
         </Float>
       </PresentationControls>
+      <Flag />
 
       {/* <ContactShadows position-y={-1.4} opacity={0.4} scale={5} blur={2.4} /> */}
     </>
