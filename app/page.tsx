@@ -21,10 +21,10 @@ export default function Home() {
       <Hero />
       {/* </Suspense> */}
       {/* <Brands/> */}
+      <Testimonials />
 
       <Features />
       {/* <Video /> */}
-      <Testimonials />
       <AboutSectionOne />
 
       <AboutSectionTwo />

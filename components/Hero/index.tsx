@@ -4,6 +4,8 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import Experience from "./Experience.jsx";
 import { Suspense, useEffect, useState } from "react";
 import Loader from "./Loader";
+import Brands from "@/components/Brands";
+
 const Hero = () => {
   const [show, setShow] = useState(true);
   useEffect(() => {
@@ -57,12 +59,14 @@ const Hero = () => {
             </div> */}
           </div>
 
-          <div className="flex items-center justify-center text-2xl font-bold md:absolute md:w-screen md:pt-16 md:text-5xl">
+          <div className="gap-8 absolute top-0 flex h-screen flex-col items-center justify-center text-center text-3xl font-bold md:absolute md:w-screen  md:text-5xl">
             {/* {show && ( */}
-              <h1 className="title">
-                Captivate.<span style={{ color: "#FFFF00" }}> Engage.</span>{" "}
-                Inspire.
-              </h1>
+            <h1 className="title md:mb-12">
+              Captivate.<span style={{ color: "#FFFF00" }}> Engage.</span>{" "}
+              Inspire.
+            </h1>
+            <Brands />
+
             {/* )} */}
           </div>
         </section>
