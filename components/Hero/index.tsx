@@ -1,14 +1,18 @@
 "use client";
-
+import Spline from "@splinetool/react-spline";
 import { Canvas, useFrame } from "@react-three/fiber";
 import Experience from "./Experience.jsx";
 import { Suspense, useEffect, useState } from "react";
 import Loader from "./Loader";
 import Brands from "@/components/Brands";
+import Image from "next/image.js";
 
 const Hero = () => {
   const [show, setShow] = useState(true);
+  const [width, setWidth] = useState(0);
+
   useEffect(() => {
+    setWidth(window.innerWidth);
     setTimeout(() => {
       setShow(false);
     }, 3500);
@@ -59,14 +63,20 @@ const Hero = () => {
             </div> */}
           </div>
 
-          <div className="gap-8 absolute top-0 flex h-screen flex-col items-center justify-center text-center text-3xl font-bold md:absolute md:w-screen  md:text-5xl">
+          <div className="absolute top-0 flex h-screen w-screen flex-col items-center justify-center gap-8 text-center text-3xl font-bold md:absolute md:w-screen  md:text-5xl">
             {/* {show && ( */}
-            <h1 className="title md:mb-12">
-              Captivate.<span style={{ color: "#FFFF00" }}> Engage.</span>{" "}
-              Inspire.
+            <h1 className="title text-center md:mb-12">
+              {/* Captivate.<span style={{ color: "#FFFF00" }}> Engage.</span>{" "}
+              Inspire. */}
+              <span style={{ color: "#FFFF00" }}> Design</span> X Tech
             </h1>
-            <Brands />
-
+            <div className="absolute bottom-0 h-screen w-screen">
+              {/* <Image src={"/sally.png"} alt={"3d illustration"} width={300} height={300} /> */}
+              <Spline scene="https://prod.spline.design/sEHkHbRitR6-4erc/scene.splinecode" />
+            </div>
+            <div className="absolute bottom-0">
+              <Brands />
+            </div>
             {/* )} */}
           </div>
         </section>
