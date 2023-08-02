@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import Features from "@/components/Features";
+// import Features from "@/components/Features";
+import Pricing from "@/components/Pricing";
 
 const AboutPage = () => {
   return (
@@ -8,7 +9,7 @@ const AboutPage = () => {
         pageName="Services"
         description="Get to know our services."
       />
-   <Features/>
+   <Pricing/>
    </>
   );
 };

@@ -25,6 +25,7 @@ module.exports = {
       primary: "#718096",
       cta:"#b19cd9",
       ctahover:"#ffc107",
+      scroll:"#ae2f36",
       yellow: "#b19cd9",
       "body-color": "#959CB1",
     },

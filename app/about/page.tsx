@@ -6,11 +6,11 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
-        description="Get to know us."
+        pageName="About"
+        description="Canvas for you Brand."
       />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
     </>
   );
 };

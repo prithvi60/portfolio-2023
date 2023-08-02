@@ -4,9 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  --scroll: #718096;
+  --scroll: #ae2f36;
 
   --accent: var(--scroll);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #161a39; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ae2f36; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 @layer base {
   body {
@@ -79,7 +98,7 @@ canvas {
 
 .progress-wheel .bg {
   stroke: var(--accent);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .progress-wheel .progress {

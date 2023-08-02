@@ -11,8 +11,8 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Custom Quote Tailored to your needs"
-          paragraph=""
+          title="Services we Offer"
+          paragraph="Default packages with optional addons for each package"
           center
           width="665px"
         />
@@ -62,43 +62,55 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
+            packageName="Portfolio"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="All  the essentials."
+            subtitle="Business / Personal websites"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
+            <OfferList text="Single page website" status="active" />
+            <OfferList text="Captivating Hero section" status="active" />
+            <OfferList text="Responsive design" status="active" />
             <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Whatsapp feature" status="active" />
+            <OfferList text="Web vitals" status="active" />
+            <OfferList text="3 Reviews" status="inactive" />
+
+            <OfferList text="Routed Pages" status="inactive" />
+            <OfferList text="Analytics" status="inactive" />
+            <OfferList text="Maintainance" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
+            packageName="Custom"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="All  the essentials plus performance"
+            subtitle="Full fledged Web apps"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="All the essentials" status="active" />
+
+            <OfferList text="Multi page website" status="active" />
+            <OfferList text="Visually immersive Hero section" status="active" />
+            <OfferList text="Animations" status="active" />
+            <OfferList text="UI Components" status="active" />
+            <OfferList text="UI/UX as per requirement" status="active" />
+            <OfferList text="Maintainace" status="active" />
+            <OfferList text="Analytics" status="active" />
+            <OfferList text="Copywriting" status="active" />
+            <OfferList text="5 Reviews" status="inactive" />
+            <OfferList text="SEO" status="inactive" />
+            <OfferList text="Ads" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
+            packageName="Ecommerce"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Everything you ever need"
+            subtitle="Custom Website with Shopify"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
+            <OfferList text="Converting UI/UX" status="active" />
+            <OfferList text="Responsiveness" status="active" />
+            <OfferList text="Shopify integration" status="active" />
             <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Payment Gateway" status="active" />
+            <OfferList text="Performance" status="active" />
           </PricingBox>
         </div>
       </div>
