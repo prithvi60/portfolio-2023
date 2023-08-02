@@ -43,7 +43,7 @@ const Hero = () => {
               </div>
             </div>
           </div> */}
-            <div className="experience my-component">
+            {/* <div className="experience my-component">
               <Canvas
                 camera={{
                   fov: 45,
@@ -54,16 +54,16 @@ const Hero = () => {
               >
                 <Experience />
               </Canvas>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex items-center justify-center text-2xl font-bold md:absolute md:w-screen md:pt-16 md:text-5xl">
-            {show && (
+            {/* {show && ( */}
               <h1 className="title">
                 Captivate.<span style={{ color: "#FFFF00" }}> Engage.</span>{" "}
                 Inspire.
               </h1>
-            )}
+            {/* )} */}
           </div>
         </section>
       </Suspense>
