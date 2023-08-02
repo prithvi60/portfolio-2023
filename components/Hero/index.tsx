@@ -70,11 +70,11 @@ const Hero = () => {
               Inspire. */}
               <span style={{ color: "#FFFF00" }}> Design</span> X Tech
             </h1>
-            <div className="absolute bottom-0 h-screen w-screen">
+            <div className="absolute bottom-0 h-full md:h-screen w-screen">
               {/* <Image src={"/sally.png"} alt={"3d illustration"} width={300} height={300} /> */}
               <Spline scene="https://prod.spline.design/sEHkHbRitR6-4erc/scene.splinecode" />
             </div>
-            <div className="absolute bottom-0">
+            <div className="absolute bottom-0 mb-2 md:mb-0">
               <Brands />
             </div>
             {/* )} */}

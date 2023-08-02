@@ -86,7 +86,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
+                {/* <Image
                   src="/images/logo/logo.png"
                   alt="logo"
                   width={30}
@@ -96,11 +96,11 @@ const Header = () => {
                     width: "40px",
                     height: "40px",
                   }}
-                />
+                /> */}
                 <h2 className="text-2xl font-bold text-black dark:text-white">
                   Webibee
                 </h2>
-                <Image
+                {/* <Image
                   src="/images/logo/logo.png"
                   alt="logo"
                   width={30}
@@ -110,7 +110,7 @@ const Header = () => {
                     width: "40px",
                     height: "40px",
                   }}
-                />
+                /> */}
               </Link>
 
               {width < 600 ? null : (

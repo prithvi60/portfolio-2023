@@ -28,7 +28,7 @@ const Footer = () => {
                     }}
                   />
 
-                  <Image
+                  {/* <Image
                     src="/images/logo/logo.png"
                     alt="logo"
                     width={30}
@@ -38,7 +38,7 @@ const Footer = () => {
                       width: "50px",
                       height: "50px",
                     }}
-                  />
+                  /> */}
                   <h2 className="text-2xl font-bold text-black dark:text-white">
                     Webibee
                   </h2>
